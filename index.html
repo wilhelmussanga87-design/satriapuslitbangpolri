@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dashboard Pengendalian SATRIA Puslitbang: anggaran, paket, risiko, kontrak dan milestone proyek perubahan.">
+  <meta name="theme-color" content="#102b4e">
+  <title>SATRIA — Dashboard Pengendalian Puslitbang Polri</title>
+  <link rel="icon" href="assets/satria_favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Langsung ke isi dashboard</a>
+  <aside class="sidebar" aria-label="Navigasi dashboard">
+    <a class="brand" href="#ringkasan"><img src="assets/puslitbang_logo.png" alt="Logo Puslitbang Polri"><span><strong>SATRIA</strong><small>PUSLITBANG POLRI</small></span></a>
+    <div class="nav-caption">PENGENDALIAN &amp; KEPUTUSAN</div>
+    <nav id="navigation">
+      <a href="#ringkasan"><span aria-hidden="true">01</span> Ringkasan</a>
+      <a href="#anggaran"><span aria-hidden="true">02</span> Anggaran</a>
+      <a href="#paket"><span aria-hidden="true">03</span> Paket &amp; Kartu Kendali</a>
+      <a href="#risiko"><span aria-hidden="true">04</span> Manajemen Risiko</a>
+      <a href="#kontrak"><span aria-hidden="true">05</span> Kontrak</a>
+      <a href="#milestone"><span aria-hidden="true">06</span> Milestone</a>
+      <a href="#arahan"><span aria-hidden="true">07</span> Arahan &amp; Usulan</a>
+      <a href="#dokumen"><span aria-hidden="true">08</span> Dokumen</a>
+      <a href="#galeri"><span aria-hidden="true">09</span> Galeri Kegiatan</a>
+      <a href="#tentang"><span aria-hidden="true">10</span> Informasi Data</a>
+    </nav>
+    <div class="side-note"><span class="dot"></span> Versi publikasi HTML<small>Salinan data • akses baca</small></div>
+    <div class="side-footer">PKN Tingkat II · Tahun 2026<br><strong>Wilhelmus Sanga, S.E., M.M.</strong></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div><span class="eyebrow">PUSAT PENELITIAN DAN PENGEMBANGAN POLRI</span><p>Dashboard Pengendalian SATRIA</p></div><button id="print" class="button secondary" type="button">Cetak halaman</button></header>
+    <main id="main" tabindex="-1">
+      <section class="hero"><div class="hero-copy"><span class="eyebrow">PROYEK PERUBAHAN PKN TINGKAT II</span><h1>Kepastian Regulasi,<br><em>Kemudahan Eksekusi.</em></h1><p>Strategi Akselerasi Transformasi Tata Kelola Keuangan Berbasis Risiko melalui SATRIA Puslitbang.</p><div class="hero-tags"><span>Transparan</span><span>Akuntabel</span><span>Tepat waktu</span><span>Berkelanjutan</span></div></div><img src="assets/satria_logo.png" alt="Logo SATRIA" class="satria-logo"></section>
+      <div class="snapshot"><span id="snapshot-date">Memuat informasi ekspor…</span><span>Periode data mengikuti sumber; bukan data langsung.</span></div>
+      <div class="page-heading"><div><span class="eyebrow" id="page-kicker">MONITORING</span><h2 id="page-title">Ringkasan</h2><p id="page-description"></p></div></div>
+      <div id="controls" class="controls"></div>
+      <div id="view" aria-live="polite"><p class="notice">Memuat data dashboard…</p></div>
+      <noscript><p class="notice">Aktifkan JavaScript pada browser untuk menampilkan data dan navigasi dashboard.</p></noscript>
+    </main>
+    <footer class="footer">SATRIA Puslitbang · Pengendalian berbasis risiko<span id="footer-date"></span></footer>
+  </div>
+  <dialog id="photo-dialog"><button type="button" class="button" id="close-photo">Tutup foto</button><img id="full-photo" alt=""><p id="photo-caption"></p></dialog>
+</body>
+</html>

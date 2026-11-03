@@ -1,0 +1,9 @@
+DirectoryIndex index.html
+Options -Indexes
+<IfModule mod_headers.c>
+  <FilesMatch "^(index\.html|data\.js|app\.js|styles\.css)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
